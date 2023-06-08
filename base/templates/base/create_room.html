@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <div>
+        <table>
+            <form action="{% url 'create-room' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                 <div>
+                    {{form.as_table}}
+                 </div>
+                 <th>
+                    <input type="submit" value="Enviar">
+                </th>
+            </form>
+        </table>
+    </div>
+
+{% endblock content %}
+
+

@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .home-container{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+</style>
+
+    <div class="home-container">
+        <div>
+            <h3>Browse Topics</h3>
+            <hr>
+            <div>
+                <a href="{% url 'home'%}">Todos</a>
+            </div>
+                {% for topico in topicos %}
+                
+                    <div>
+                        <a href="{% url 'home'%}?q={{topico.nome}}">{{topico.nome}}</a>
+                    </div>
+                
+                {% endfor %}
+            <hr>
+        </div>
+        
+        <div>
+            <h5>{{sala_count}} Salas Disponíveis</h5>
+            <a href="{% url 'create-room' %}">Criar Sala</a>
+        <div>
+            {% for sala in salas %}
+                <div>
+                    <a href="{% url 'update-room' sala.id %}">Editar</a>
+                    <a href="{% url 'delete-room' sala.id %}">Excluir</a>
+                    <span>@{{sala.host.username}}</span>
+                    <h5>{{sala.id}} --  <a href="{% url 'room' sala.id %}">{{sala.nome}}</a></h5>
+                    {{sala.topico.nome}}
+                    <h6>Última postagem: {{sala.editado}}</h6>
+                    <hr>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

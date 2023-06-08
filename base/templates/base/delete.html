@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <form action="{% url 'delete-room' obj.id %}" method="POST">
+        {% csrf_token %}
+        <p>
+            Você tem certeza que deseja <span style="color: red;">Excluir</span> "{{obj}}"?
+        </p>
+        <input type="submit" value="Excluir">
+        <a href="{{request.META.HTTP_REFERER}}">Cancelar</a>
+    </form>
+
+{% endblock content %}

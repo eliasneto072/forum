@@ -1,0 +1,9 @@
+<a href="/">
+    <h1>Logo</h1>
+</a>
+
+<form action="{% url 'home' %}" method="GET">
+    {% csrf_token %}
+    <input type="text" placeholder="Pesquisar" name="q">
+</form>
+<hr>
