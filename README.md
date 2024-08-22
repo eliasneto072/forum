@@ -26,3 +26,15 @@ Para instalar e executar o projeto, siga estas etapas:
 4. Aplique as Migrações
 5. Crie um Superusuário
 6. Inicie o Servidor de Desenvolvimento
+
+## Contato
+Para dúvidas ou mais informações, entre em contato através do e-mail: eliasneto072@gmail.com.
+
+## Demonstração
+
+https://github.com/user-attachments/assets/f6510484-6cbb-4f52-a295-a91d21b7567c
+
+
+
+
+
