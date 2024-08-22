@@ -27,7 +27,7 @@ Para instalar e executar o projeto, siga estas etapas:
 5. Crie um Superusuário
 6. Inicie o Servidor de Desenvolvimento
 
-## Aplicação
+## Preview app
 https://github.com/user-attachments/assets/f6510484-6cbb-4f52-a295-a91d21b7567c
 
 ## Contato
