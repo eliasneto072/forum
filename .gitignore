@@ -13,3 +13,7 @@ db.sqlite3
 # IDE
 .vscode/
 .idea/
+
+staticfiles/
+media/
+*.log
