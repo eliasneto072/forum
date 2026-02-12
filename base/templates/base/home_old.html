@@ -1,0 +1,26 @@
+{% load static %}
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <div class="home-container">
+        <div>
+            {% include "base/topics_component.html" %}
+        </div>
+        
+        <div>
+            <h5>{{sala_count}} Salas Disponíveis</h5>
+            <a href="{% url 'create-room' %}">Criar Sala</a>
+
+            {% include "base/feed_component.html" %}
+    </div>
+
+    <div>
+
+            {% include "base/activity_component.html" %}
+
+    </div>
+
+</div>
+
+{% endblock content %}

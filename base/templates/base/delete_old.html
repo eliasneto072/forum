@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    {% if page == 'deleteRoom' %}
+
+        <form action="{% url 'delete-room' obj.id %}" method="POST">
+            {% csrf_token %}
+            <p>
+                Você tem certeza que deseja <span style="color: red;">Excluir</span> "{{obj}}"?
+            </p>
+            <a href="{{request.META.HTTP_REFERER}}">Cancelar</a>
+            <input type="submit" value="Excluir">
+        </form>
+    {% else %}
+            <form action="{% url 'delete-message' obj.id %}" method="POST">
+            {% csrf_token %}
+            <p>
+                Você tem certeza que deseja <span style="color: red;">Excluir</span> "{{obj}}"?
+            </p>
+            <a href="{{request.META.HTTP_REFERER}}">Cancelar</a>
+            <input type="submit" value="Excluir">
+        </form>
+
+    {% endif %}
+
+{% endblock content %}
