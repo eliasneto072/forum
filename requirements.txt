@@ -9,3 +9,4 @@ gunicorn==23.0.0
 sqlparse==0.4.4
 tzdata==2023.3
 pytz==2023.3
+whitenoise==6.6.0
