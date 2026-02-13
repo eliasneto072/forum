@@ -70,12 +70,12 @@ DATABASE_URL=postgres://user:password@host:5432/dbname
 ## 🐳 Rodando Localmente com Docker
 
 - 1️⃣ Clone o repositório
-git clone https://github.com/eliasneto072/forum.git
- <br>
-cd forum-main
+```git clone https://github.com/eliasneto072/forum.git```
+
+ ```cd forum-main```
 
 - 2️⃣ Suba os containers
-docker compose up --build
+```docker compose up --build```
 
 A aplicação ficará disponível em:
 http://localhost:8000
