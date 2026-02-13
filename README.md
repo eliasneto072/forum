@@ -101,7 +101,7 @@ Cada novo push no branch principal gera um redeploy automático.
 ## 👨‍💻 Autor
 
 - **Desenvolvido por Elias Neto**
-- **📍 Brasil ** 
+- **📍 Brasil** 
 - **💼 Desenvolvedor Backend / Full Stack** 
-- **📫 Aberto a oportunidades e desafios profissionais **
+- **📫 Aberto a oportunidades e desafios profissionais**
 
