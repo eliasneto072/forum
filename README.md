@@ -65,6 +65,8 @@ DATABASE_URL=postgres://user:password@host:5432/dbname
 ```
 ⚠️ O arquivo .env não é versionado por segurança.
 
+---
+
 ## 🐳 Rodando Localmente com Docker
 
 1️⃣ Clone o repositório
@@ -77,6 +79,8 @@ docker compose up --build
 A aplicação ficará disponível em:
 http://localhost:8000
 
+---
+
 ## 🚀 Deploy em Produção
 
 O deploy é feito via Render, utilizando:
@@ -87,6 +91,8 @@ O deploy é feito via Render, utilizando:
 - **Gunicorn como servidor WSGI**
   
 Cada novo push no branch principal gera um redeploy automático.
+
+---
 
 ## 👨‍💻 Autor
 
