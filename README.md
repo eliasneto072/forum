@@ -69,11 +69,12 @@ DATABASE_URL=postgres://user:password@host:5432/dbname
 
 ## 🐳 Rodando Localmente com Docker
 
-1️⃣ Clone o repositório
+- 1️⃣ Clone o repositório
 git clone https://github.com/eliasneto072/forum.git
+ <br>
 cd forum-main
 
-2️⃣ Suba os containers
+- 2️⃣ Suba os containers
 docker compose up --build
 
 A aplicação ficará disponível em:
@@ -96,8 +97,8 @@ Cada novo push no branch principal gera um redeploy automático.
 
 ## 👨‍💻 Autor
 
-**Desenvolvido por Elias Neto
-📍 Brasil 
-💼 Desenvolvedor Backend / Full Stack
-📫 Aberto a oportunidades e desafios profissionais **
+- **Desenvolvido por Elias Neto**
+- **📍 Brasil ** 
+- **💼 Desenvolvedor Backend / Full Stack** 
+- **📫 Aberto a oportunidades e desafios profissionais **
 
