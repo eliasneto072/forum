@@ -1,53 +1,97 @@
-# Fórum de Discussão em Django
+# 🚀 AeroForum
 
-## Descrição
+**AeroForum** é uma aplicação web full stack desenvolvida com **Django**, focada em simular um **fórum moderno**, com autenticação, área administrativa e deploy real em produção.
 
-Este projeto é um fórum de discussão completo desenvolvido com o framework Django. Ele oferece uma plataforma robusta para a criação e gerenciamento de salas de discussão, pesquisa de tópicos e gerenciamento de conteúdo.
+O projeto foi criado com foco em **boas práticas**, **Docker**, **PostgreSQL** e **deploy em cloud**, servindo como **projeto de portfólio profissional**.
 
-## Funcionalidades
+🔗 **Aplicação em produção:**  
+👉 https://forum-207f.onrender.com
 
-- Criação e Gerenciamento de Salas
-- Pesquisa e Navegação de Tópicos
-- Gerenciamento de Conteúdo
-- Interface Simples
+---
 
-## Tecnologias Utilizadas
+## 🧠 Objetivo do Projeto
 
-- Django
-- HTML
-- Postgres
-- Docker
+Demonstrar domínio prático em:
 
-## Instalação
+- Backend com Django
+- Banco de dados relacional (PostgreSQL)
+- Dockerização de aplicações
+- Deploy real em produção (Render)
+- Boas práticas de configuração e segurança
+- Gerenciamento de variáveis de ambiente
+- Servir arquivos estáticos corretamente em produção
 
-Para instalar e executar o projeto, siga estas etapas:
+---
 
-1. Clone o Repositório
-2. Crie um Ambiente Virtual (python -m venv .venv) e Ative (cd .venv/scripts/activate)
-3. Instale as Dependências
-4. Aplique as Migrações
-5. Crie um Superusuário
-6. Inicie o Servidor de Desenvolvimento
+## 🛠️ Tecnologias Utilizadas
 
-## Preview app
-https://github.com/user-attachments/assets/f6510484-6cbb-4f52-a295-a91d21b7567c
+### Backend
+- **Python 3.12**
+- **Django 4.2 (LTS)**
+- **Django REST Framework**
+- **Gunicorn**
 
-## Contato
-Para dúvidas ou mais informações, entre em contato através do e-mail: eliasneto072@gmail.com.
+### Banco de Dados
+- **PostgreSQL**
 
+### Infraestrutura / Deploy
+- **Docker**
+- **Render (Free Tier)**
+- **WhiteNoise** (servir arquivos estáticos)
+- **dotenv** (configuração por ambiente)
 
+---
 
-## Docker deployment
+## 📦 Arquitetura do Projeto
 
-1. Copy `.env.example` to `.env`
-2. Update `SECRET_KEY`, `DB_PASSWORD` and `ALLOWED_HOSTS`
-3. Run: `docker compose up --build -d`
-4. Open: `http://localhost:8000`
+- Aplicação **totalmente containerizada**
+- Separação de ambientes via variáveis (`.env`)
+- Banco PostgreSQL externo (cloud)
+- Arquivos estáticos coletados com `collectstatic`
+- Servidos em produção via WhiteNoise
+- Admin do Django habilitado para gerenciamento
 
-Stop containers:
-- `docker compose down`
+---
 
-Stop and remove database volume:
-- `docker compose down -v`
+## ⚙️ Variáveis de Ambiente
 
-https://forum-207f.onrender.com/
+Exemplo de configuração:
+
+```env
+SECRET_KEY=your-secret-key
+DEBUG=False
+ALLOWED_HOSTS=forum-207f.onrender.com
+DATABASE_URL=postgres://user:password@host:5432/dbname
+```
+⚠️ O arquivo .env não é versionado por segurança.
+
+## 🐳 Rodando Localmente com Docker
+
+1️⃣ Clone o repositório
+git clone https://github.com/eliasneto072/forum.git
+cd forum-main
+
+2️⃣ Suba os containers
+docker compose up --build
+
+A aplicação ficará disponível em:
+http://localhost:8000
+
+## 🚀 Deploy em Produção
+
+O deploy é feito via Render, utilizando:
+
+- **Dockerfile customizado**
+- **PostgreSQL gerenciado**
+- **Variáveis de ambiente seguras**
+- **Gunicorn como servidor WSGI**
+  
+Cada novo push no branch principal gera um redeploy automático.
+
+## 👨‍💻 Autor
+
+**Desenvolvido por Elias Neto
+📍 Brasil 
+💼 Desenvolvedor Backend / Full Stack
+📫 Aberto a oportunidades e desafios profissionais **
+
